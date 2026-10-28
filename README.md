@@ -14,7 +14,7 @@
 ## 🎯 Target User
 
 - **Hackathon Participants:** Developers, UI/UX designers, and college students looking for actionable problem statements they can grok in under 30 seconds.
-- **Solo Builders & Teams (1–6 people):** Looking for structured briefs, difficulty ratings, twist constraints, and an interactive submission checklist.
+- **Solo Builders & Teams (1–6 people):** Looking for structured briefs, twist constraints, and an interactive submission checklist.
 - **Hackathon Organizers & Mentors:** Needing a unified, responsive showcase that eliminates repetitive questions about tech stacks, backends, and judging criteria.
 
 ---
@@ -24,7 +24,7 @@
 Traditional hackathons share problem statements as long, dense PDF documents or cluttered Notion pages. Participants spend their first 2 hours debating requirements and missing key constraints rather than writing code.
 
 **Ideathon solves this by:**
-1. **The 30-Second Rule:** Every challenge is scannable at a glance — custom icon, codename, one-line hook, difficulty rating, and tags.
+1. **The 30-Second Rule:** Every challenge is scannable at a glance — custom icon, codename, one-line hook, and tags.
 2. **Deep-Dive Modals:** Full briefs with interactive feature checklists, bonus vectors, and highlighted "Twist Constraints".
 3. **One-Click Markdown Export:** Participants can copy the entire structured brief to their clipboard or export to PDF instantly.
 4. **Interactive Submission Checklist:** Keeps teams on track with real-time completion percentages saved in localStorage.
@@ -113,12 +113,12 @@ Run `npm run build` and publish the `/dist` folder to your `gh-pages` branch.
 
 ## 📋 Problem Statements Overview
 
-| Challenge | Accent | Difficulty | Key Focus | The Twist |
-| :--- | :--- | :---: | :--- | :--- |
-| **Decoded** | Cyan | 2 / 3 | Plain Language & Data Viz | Main result screen understood without scrolling on mobile. |
-| **Everyone Online** | Violet | 3 / 3 | Accessibility & Low Bandwidth | Usable on throttled "Slow 3G" network conditions. |
-| **Campus Pulse** | Amber | 1 / 3 | Student Dashboard & Timelines | Usable one-handed on mobile with zero pinch-zoom. |
-| **GreenTrail** | Emerald | 2 / 3 | Eco-Gamification & Habits | Daily habit logging must take 3 taps or fewer. |
+| Challenge | Accent | Key Focus | The Twist |
+| :--- | :--- | :--- | :--- |
+| **Decoded** | Cyan | Plain Language & Data Viz | Main result screen understood without scrolling on mobile. |
+| **Everyone Online** | Violet | Accessibility & Low Bandwidth | Usable on throttled "Slow 3G" network conditions. |
+| **Campus Pulse** | Amber | Student Dashboard & Timelines | Usable one-handed on mobile with zero pinch-zoom. |
+| **GreenTrail** | Emerald | Eco-Gamification & Habits | Daily habit logging must take 3 taps or fewer. |
 
 ---
 

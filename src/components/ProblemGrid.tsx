@@ -27,8 +27,7 @@ export const ProblemGrid: React.FC<ProblemGridProps> = ({ onOpenBrief }) => {
       // 1. Category Filter
       let matchesCategory = true;
       if (selectedFilter === "Beginner-Friendly") {
-        matchesCategory =
-          problem.tags.includes("Beginner-Friendly") || problem.difficulty === 1;
+        matchesCategory = problem.tags.includes("Beginner-Friendly");
       } else if (selectedFilter === "Bonus-Heavy") {
         matchesCategory =
           problem.id === "greentrail" ||

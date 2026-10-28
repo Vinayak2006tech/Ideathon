@@ -6,7 +6,6 @@ export interface Problem {
   icon: "ScanSearch" | "Globe" | "LayoutDashboard" | "Leaf";
   hook: string;
   tags: string[];
-  difficulty: 1 | 2 | 3;
   buildTime: string;
   background: string;
   challenge: string;
@@ -25,7 +24,6 @@ export const problems: Problem[] = [
     icon: "ScanSearch",
     hook: "Turn a confusing document into clarity in 30 seconds.",
     tags: ["Plain Language", "Data Viz", "Design-Heavy"],
-    difficulty: 2,
     buildTime: "3 hrs",
     background: `Everyday life is full of confusing information: electricity bills, lab reports, loan agreements, government scheme eligibility, insurance policies, exam syllabi. People sign, pay, or skip things they don't understand, and it costs them money, health, and opportunities.`,
     challenge: `Pick ONE domain and build a frontend experience that takes confusing information and makes it clear in under 30 seconds — using visuals, interaction, and plain language instead of walls of text.`,
@@ -59,7 +57,6 @@ export const problems: Problem[] = [
     icon: "Globe",
     hook: "Make one essential service usable by someone who has never used an app.",
     tags: ["Accessibility", "Inclusive Design", "Low Bandwidth"],
-    difficulty: 3,
     buildTime: "3 hrs",
     background: `Millions of first-time smartphone users, elderly people, low-literacy users, and people with slow networks or low-end devices get locked out of essential digital services because most interfaces assume fast internet, small-print literacy, and tech confidence.`,
     challenge: `Build an inclusive web experience for ONE essential service, so a first-time user can complete a task without help.`,
@@ -94,7 +91,6 @@ export const problems: Problem[] = [
     icon: "LayoutDashboard",
     hook: "One dashboard for a student's entire campus life.",
     tags: ["Dashboard", "Beginner-Friendly", "No Backend"],
-    difficulty: 1,
     buildTime: "3 hrs",
     background: `Students juggle timetables, assignments, club events, exam alerts, and notices across WhatsApp groups, emails, and PDFs. Important information gets lost and the experience is fragmented.`,
     challenge: `Design and build a single, intuitive web dashboard that gives a student one clear view of their academic and campus life.`,
@@ -127,7 +123,6 @@ export const problems: Problem[] = [
     icon: "Leaf",
     hook: "Make eco-tracking so fun people forget it's a chore.",
     tags: ["Gamification", "Data Viz", "Motion-Heavy"],
-    difficulty: 2,
     buildTime: "3 hrs",
     background: `People want to live more sustainably, but they lack a simple, motivating way to see their daily impact (energy, water, travel, waste) and act on it.`,
     challenge: `Build an engaging frontend experience that helps users track, visualize, and improve their eco-footprint through creative interaction rather than boring forms and tables.`,

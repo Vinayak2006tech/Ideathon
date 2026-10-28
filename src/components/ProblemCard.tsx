@@ -45,7 +45,6 @@ export const ProblemCard: React.FC<ProblemCardProps> = ({
       tag: "bg-cyan-400/10 text-cyan-400 border-cyan-400/20",
       button: "group-hover:text-cyan-400",
       btnGlow: "hover:bg-cyan-400/15 text-cyan-400 border-cyan-400/30",
-      dotActive: "bg-cyan-400",
       accentText: "text-cyan-400",
     },
     violet: {
@@ -55,7 +54,6 @@ export const ProblemCard: React.FC<ProblemCardProps> = ({
       tag: "bg-violet-400/10 text-violet-400 border-violet-400/20",
       button: "group-hover:text-violet-400",
       btnGlow: "hover:bg-violet-400/15 text-violet-400 border-violet-400/30",
-      dotActive: "bg-violet-400",
       accentText: "text-violet-400",
     },
     amber: {
@@ -65,7 +63,6 @@ export const ProblemCard: React.FC<ProblemCardProps> = ({
       tag: "bg-amber-400/10 text-amber-400 border-amber-400/20",
       button: "group-hover:text-amber-400",
       btnGlow: "hover:bg-amber-400/15 text-amber-400 border-amber-400/30",
-      dotActive: "bg-amber-400",
       accentText: "text-amber-400",
     },
     emerald: {
@@ -75,7 +72,6 @@ export const ProblemCard: React.FC<ProblemCardProps> = ({
       tag: "bg-emerald-400/10 text-emerald-400 border-emerald-400/20",
       button: "group-hover:text-emerald-400",
       btnGlow: "hover:bg-emerald-400/15 text-emerald-400 border-emerald-400/30",
-      dotActive: "bg-emerald-400",
       accentText: "text-emerald-400",
     },
   }[problem.accent];
@@ -140,24 +136,8 @@ export const ProblemCard: React.FC<ProblemCardProps> = ({
             ))}
           </div>
 
-          {/* Difficulty Dots and Build Time */}
-          <div className="flex items-center justify-between pt-3 border-t border-slate-200 dark:border-white/5 text-xs text-slate-500 dark:text-slate-400">
-            <div className="flex items-center gap-2">
-              <span className="font-mono">Difficulty:</span>
-              <div className="flex items-center gap-1" aria-label={`Difficulty level ${problem.difficulty} of 3`}>
-                {[1, 2, 3].map((dot) => (
-                  <span
-                    key={dot}
-                    className={`w-2 h-2 rounded-full transition-colors ${
-                      dot <= problem.difficulty
-                        ? themeStyles.dotActive
-                        : "bg-slate-300 dark:bg-white/20"
-                    }`}
-                  />
-                ))}
-              </div>
-            </div>
-
+          {/* Build Time */}
+          <div className="flex items-center pt-3 border-t border-slate-200 dark:border-white/5 text-xs text-slate-500 dark:text-slate-400">
             <div className="flex items-center gap-1.5 font-mono">
               <Clock className="w-3.5 h-3.5 text-slate-400" />
               <span>Est. {problem.buildTime}</span>

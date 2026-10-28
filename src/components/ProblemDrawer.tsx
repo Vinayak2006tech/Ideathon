@@ -141,7 +141,7 @@ export const ProblemDrawer: React.FC<ProblemDrawerProps> = ({
 > ${problem.subtitle}
 > Hook: "${problem.hook}"
 
-**Difficulty:** Level ${problem.difficulty}/3 | **Est. Build Time:** ${problem.buildTime}
+**Est. Build Time:** ${problem.buildTime}
 **Tags:** ${problem.tags.join(", ")}
 
 ---
@@ -285,7 +285,7 @@ ${problem.bonus.map((b) => `- ${b}`).join("\n")}
                     Challenge Brief · Slide {currentIndex + 1}/4
                   </span>
                   <span className="text-xs font-mono text-slate-300">
-                    Difficulty {problem.difficulty}/3 · Est. {problem.buildTime}
+                    Est. {problem.buildTime}
                   </span>
                 </div>
                 <h2 className="text-2xl sm:text-4xl font-extrabold text-white leading-tight drop-shadow-md">
